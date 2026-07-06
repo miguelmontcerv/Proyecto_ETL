@@ -1,0 +1,4 @@
+email-validator
+paramiko
+pandas
+mysql-connector-python

@@ -1,0 +1,39 @@
+services:
+
+  sftp:
+    build:
+      context: ./sftp_server
+    container_name: sftp_server
+    ports:
+      - "2222:22"
+    command: usuario:password:1001
+    volumes:
+      - ./sftp_server/data:/home/usuario/data
+
+  etl:
+    build:
+      context: ./etl
+    container_name: etl
+    volumes:
+      - ./etl:/app
+
+  mysql:
+    image: mysql:8.0
+    container_name: mysql
+    restart: unless-stopped
+
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: visitas
+      MYSQL_USER: etl
+      MYSQL_PASSWORD: etl
+
+    ports:
+      - "3306:3306"
+
+    volumes:
+    - mysql_data:/var/lib/mysql
+    - ./mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+volumes:
+  mysql_data:
