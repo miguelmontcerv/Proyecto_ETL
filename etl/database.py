@@ -7,7 +7,6 @@ from logger import Logger
 class Database:
 
     def __init__(self, host, database, user, password):
-
         self.host = host
         self.database = database
         self.user = user
@@ -19,7 +18,6 @@ class Database:
 
     def connect(self):
         try:
-
             self.connection = mysql.connector.connect(
                 host=self.host,
                 database=self.database,
@@ -28,12 +26,10 @@ class Database:
             )
 
             self.cursor = self.connection.cursor()
-
             self.logger.info("Conexión a MySQL exitosa.")
 
         except mysql.connector.Error as err:
-
-            logger.error(f"Error al conectar a MySQL: {err}")
+            self.logger.error(f"Error al conectar a MySQL: {err}")
 
     def disconnect(self):
         try:
@@ -46,13 +42,10 @@ class Database:
             self.logger.info("Conexión cerrada.")
 
         except mysql.connector.Error as err:
-
             self.logger.error(f"Error al cerrar la conexión: {err}")
 
     def file_processed(self, filename):
-
         try:
-
             query = """
                 SELECT 1
                 FROM control_cargas
@@ -61,19 +54,14 @@ class Database:
             """
 
             self.cursor.execute(query, (filename,))
-
             return self.cursor.fetchone() is not None
 
         except mysql.connector.Error as err:
-
             self.logger.error(f"Error consultando control_cargas: {err}")
-
             return False
 
     def register_file(self, filename, processed_records, error_records):
-
         try:
-
             query = """
                 INSERT INTO control_cargas
                 (
@@ -99,22 +87,17 @@ class Database:
             )
 
             self.connection.commit()
-
             self.logger.info(f"{filename} registrado en control_cargas.")
 
         except mysql.connector.Error as err:
-
             self.connection.rollback()
-
             if err.errno == 1062:
                 self.logger.error(f"El archivo '{filename}' ya estaba registrado.")
             else:
                 self.logger.error(f"Error registrando archivo: {err}")
     
     def insert_estadistica(self, dataframe):
-
         try:
-
             query = """
                 INSERT INTO estadistica
                 (
@@ -143,7 +126,6 @@ class Database:
             """
 
             for _, row in dataframe.iterrows():
-
                 values = tuple(
                     None if pd.isna(value) else value
                     for value in (
@@ -168,18 +150,14 @@ class Database:
                 self.cursor.execute(query, values)
 
             self.connection.commit()
-
             self.logger.info(f"{len(dataframe)} registros insertados en estadistica.")
 
         except mysql.connector.Error as err:
-
             self.connection.rollback()
-
             self.logger.error(f"Error insertando estadistica: {err}")
 
     def upsert_visitante(self, dataframe):
         try:
-
             select_query = """
                 SELECT
                     fechaUltimaVisita,
@@ -229,9 +207,6 @@ class Database:
 
                 result = self.cursor.fetchone()
 
-                # ===========================
-                # INSERT
-                # ===========================
                 if result is None:
 
                     self.cursor.execute(
@@ -248,9 +223,6 @@ class Database:
 
                     inserts += 1
 
-                # ===========================
-                # UPDATE
-                # ===========================
                 else:
 
                     fecha_bd = result[0]
@@ -298,14 +270,11 @@ class Database:
             self.logger.info(f"Visitantes actualizados: {updates}")
 
         except mysql.connector.Error as err:
-
             self.connection.rollback()
-
             self.logger.error(f"Error haciendo upsert de visitante: {err}")
 
     def insert_errores(self, archivo, dataframe):
         try:
-
             query = """
                 INSERT INTO errores
                 (

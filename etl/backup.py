@@ -1,11 +1,13 @@
 from pathlib import Path
 import zipfile
 from datetime import datetime
+from logger import Logger
 
 
 class Backup:
 
     def compress(self, files, backup_folder):
+        logger = Logger()
 
         Path(backup_folder).mkdir(
             parents=True,
@@ -31,4 +33,4 @@ class Backup:
                     arcname=file.name
                 )
 
-        print(f"\nBackup creado: {zip_path}")
+        logger.info(f"Backup creado: {zip_path}")

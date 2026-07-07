@@ -4,7 +4,6 @@ from logger import Logger
 class SFTPClient:
 
     def __init__(self, host, port, username, password):
-
         self.host = host
         self.port = port
         self.username = username
@@ -15,7 +14,6 @@ class SFTPClient:
         self.logger = Logger()
 
     def connect(self):
-
         self.logger.info("Conectando al servidor SFTP...")
 
         self.transport = paramiko.Transport(
@@ -34,7 +32,6 @@ class SFTPClient:
         self.logger.info("Conexión establecida.")
 
     def disconnect(self):
-
         if self.client:
             self.client.close()
 

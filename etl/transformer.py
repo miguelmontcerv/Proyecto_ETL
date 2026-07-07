@@ -5,7 +5,6 @@ from datetime import datetime
 class Transformer:
 
     def transform(self, df: pd.DataFrame):
-
         visitante_df = self._build_visitante(df)
 
         estadistica_df = self._build_estadistica(df)
@@ -14,7 +13,6 @@ class Transformer:
         return visitante_df, estadistica_df
     
     def _build_visitante(self, df: pd.DataFrame):
-
         visitante = df.copy()
 
         visitante["Fecha envio"] = pd.to_datetime(

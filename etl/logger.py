@@ -2,7 +2,6 @@ import logging
 from pathlib import Path
 from datetime import datetime
 
-
 class Logger:
 
     def __init__(self):

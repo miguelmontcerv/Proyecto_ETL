@@ -89,7 +89,6 @@ def main():
 
         # Lo convertimos en un dataframe (con la estructura solicitada -jyv-)
         dataframe = parser.parse(local_file)
-
         
         # Validamos el email y la fecha por cada registro del dataframe
         valid_df, error_df = validator.validate(dataframe)
@@ -132,7 +131,7 @@ def main():
 
         logger.info("-" * 60)
 
-    # Comprimimos los archivos del día, los eliminamos remota y localmente, y guardamos el zip local
+    # Comprimimos los archivos del día, los eliminamos localmente, y guardamos el zip local
     if archivos_procesados:
         backup.compress(
             archivos_procesados,
