@@ -6,7 +6,7 @@ Proceso ETL desarrollado en **Python** para integrar la información de visitas 
 
 # Arquitectura del sistema
 
-![Arquitectura del sistema](imagenes/arquitectura.PNG)
+![Arquitectura del sistema](images/arquitectura.PNG)
 
 
 ---
@@ -71,7 +71,7 @@ Proyecto_ETL/
 
 # Flujo de procesamiento
 
-![Flujo del ETL](imagenes/pipeline.PNG)
+![Flujo del ETL](images/pipeline.PNG)
 
 
 Cada ejecución del ETL sigue el siguiente flujo:
@@ -254,13 +254,13 @@ Para ver la salida completa, entre al archivo `etl\logs\etl_20260707.log`
 
 ---
 # Captura de pantallas de la Base de Datos
-![Tabla Control Cargas](imagenes/ControlCargas.PNG)
+![Tabla Control Cargas](images/ControlCargas.PNG)
 
-![Tabla Estadistica](imagenes/TablaEstadistica.PNG)
+![Tabla Estadistica](images/TablaEstadistica.PNG)
 
-![Tabla Visitante](imagenes/TablaVisitante.PNG)
+![Tabla Visitante](images/TablaVisitante.PNG)
 
-![Tabla Errores](imagenes/TablaVisitante.PNG)
+![Tabla Errores](images/TablaVisitante.PNG)
 
 ---
 
