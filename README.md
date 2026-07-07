@@ -260,7 +260,7 @@ Para ver la salida completa, entre al archivo `etl\logs\etl_20260707.log`
 
 ![Tabla Visitante](images/TablaVisitante.PNG)
 
-![Tabla Errores](images/TablaVisitante.PNG)
+![Tabla Errores](images/TablaErrores.PNG)
 
 ---
 
