@@ -114,7 +114,7 @@ report_*.txt
 
 - El segundo campo del archivo puede variar (`jyv`, `jk`, `fgh`, etc.), pero internamente siempre es normalizado como **jyv**.
 
-- Los emails son validados mediante expresiones regulares.
+- Los emails son validados mediante el método *validate_email* que traemos de **email_validator**.
 
 - Las fechas son validadas utilizando el formato:
 
