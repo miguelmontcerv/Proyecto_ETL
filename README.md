@@ -6,13 +6,8 @@ Proceso ETL desarrollado en **Python** para integrar la información de visitas 
 
 # Arquitectura del sistema
 
-![Arquitectura del sistema](imagenes/arquitectura.png)
+![Arquitectura del sistema](imagenes/arquitectura.PNG)
 
----
-
-# Flujo del pipeline
-
-![Flujo del ETL](imagenes/pipeline.png)
 
 ---
 
@@ -75,6 +70,9 @@ Proyecto_ETL/
 ---
 
 # Flujo de procesamiento
+
+![Flujo del ETL](imagenes/pipeline.PNG)
+
 
 Cada ejecución del ETL sigue el siguiente flujo:
 
@@ -203,6 +201,40 @@ docker compose down
 
 ---
 
+# Salida en los Logs (Resumida)
+
+Para ver la salida completa, entre al archivo `etl\logs\etl_20260707.log`
+
+```bash
+ | INFO | Conexión a MySQL exitosa.
+ | INFO | Conectando al servidor SFTP...
+ | INFO | Connected (version 2.0, client OpenSSH_8.4p1)
+ | INFO | Authentication (password) successful!
+ | INFO | [chan 0] Opened sftp connection (server version 3)
+ | INFO | Conexión establecida.
+ | INFO | Buscando archivos...
+ | INFO | 3 encontrados.
+ | INFO | Procesando: report_7.txt
+ | INFO | Archivo data/report_7.txt descargado.
+ | INFO | Registros válidos : 503
+ | INFO | Registros error   : 0
+ | INFO | 503 registros insertados en estadistica.
+ | INFO | Visitantes insertados : 502
+ | INFO | Visitantes actualizados: 0
+ | INFO | report_7.txt registrado en control_cargas.
+ | INFO | Archivo remoto eliminado: data/report_7.txt.
+ | INFO | Backup creado: backup/backup_20260707.zip
+ | INFO | Archivo local eliminado: downloads/report_7.txt
+ | INFO | Archivo local eliminado: downloads/report_8.txt
+ | INFO | Archivo local eliminado: downloads/report_9.txt
+ | INFO | [chan 0] sftp session closed.
+ | INFO | Conexión cerrada.
+ | INFO | Conexión cerrada.
+
+```
+
+---
+
 # Características implementadas
 
 - Conexión SFTP mediante Paramiko.
@@ -219,6 +251,16 @@ docker compose down
 - Control de archivos procesados.
 - Generación automática de respaldos ZIP.
 - Eliminación automática de archivos procesados.
+
+---
+# Captura de pantallas de la Base de Datos
+![Tabla Control Cargas](imagenes/ControlCargas.PNG)
+
+![Tabla Estadistica](imagenes/TablaEstadistica.PNG)
+
+![Tabla Visitante](imagenes/TablaVisitante.PNG)
+
+![Tabla Errores](imagenes/TablaVisitante.PNG)
 
 ---
 
