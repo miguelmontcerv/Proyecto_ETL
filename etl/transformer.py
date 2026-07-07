@@ -8,7 +8,6 @@ class Transformer:
         visitante_df = self._build_visitante(df)
 
         estadistica_df = self._build_estadistica(df)
-        estadistica_df = self._convert_dates(estadistica_df)
 
         return visitante_df, estadistica_df
     
@@ -72,9 +71,6 @@ class Transformer:
     def _build_estadistica(self, df):
         estadistica = df.copy()
 
-        return estadistica
-    
-    def _convert_dates(self, dataframe):
         date_columns = [
             "Fecha envio",
             "Fecha open",
@@ -83,10 +79,11 @@ class Transformer:
 
         for column in date_columns:
 
-            dataframe[column] = pd.to_datetime(
-                dataframe[column],
+            estadistica[column] = pd.to_datetime(
+                estadistica[column],
                 format="%d/%m/%Y %H:%M",
                 errors="coerce"
             )
 
-        return dataframe
+        return estadistica
+    

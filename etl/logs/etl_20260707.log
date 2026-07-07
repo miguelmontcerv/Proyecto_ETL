@@ -1,0 +1,60 @@
+2026-07-07 02:10:13 | INFO | Conexión a MySQL exitosa.
+2026-07-07 02:10:13 | INFO | Conectando al servidor SFTP...
+2026-07-07 02:10:13 | INFO | Connected (version 2.0, client OpenSSH_8.4p1)
+2026-07-07 02:10:13 | INFO | Authentication (password) successful!
+2026-07-07 02:10:14 | INFO | [chan 0] Opened sftp connection (server version 3)
+2026-07-07 02:10:14 | INFO | Conexión establecida.
+2026-07-07 02:10:14 | INFO | Buscando archivos...
+2026-07-07 02:10:14 | INFO | 3 encontrados.
+
+2026-07-07 02:10:14 | INFO | Procesando: report_7.txt
+2026-07-07 02:10:14 | INFO | Archivo data/report_7.txt descargado.
+2026-07-07 02:10:16 | INFO | Registros válidos : 503
+2026-07-07 02:10:16 | INFO | Registros error   : 0
+2026-07-07 02:10:35 | INFO | Conexión a MySQL exitosa.
+2026-07-07 02:10:35 | INFO | Conectando al servidor SFTP...
+2026-07-07 02:10:35 | INFO | Connected (version 2.0, client OpenSSH_8.4p1)
+2026-07-07 02:10:35 | INFO | Authentication (password) successful!
+2026-07-07 02:10:36 | INFO | [chan 0] Opened sftp connection (server version 3)
+2026-07-07 02:10:36 | INFO | Conexión establecida.
+2026-07-07 02:10:36 | INFO | Buscando archivos...
+2026-07-07 02:10:36 | INFO | 3 encontrados.
+
+2026-07-07 02:10:36 | INFO | Procesando: report_7.txt
+2026-07-07 02:10:36 | INFO | Archivo data/report_7.txt descargado.
+2026-07-07 02:10:37 | INFO | Registros válidos : 503
+2026-07-07 02:10:37 | INFO | Registros error   : 0
+2026-07-07 02:10:38 | INFO | 503 registros insertados en estadistica.
+2026-07-07 02:10:38 | INFO | Visitantes insertados : 502
+2026-07-07 02:10:38 | INFO | Visitantes actualizados: 0
+2026-07-07 02:10:38 | INFO | report_7.txt registrado en control_cargas.
+2026-07-07 02:10:38 | INFO | Archivo remoto eliminado: data/report_7.txt.
+2026-07-07 02:10:38 | INFO | ------------------------------------------------------------
+2026-07-07 02:10:38 | INFO | Procesando: report_8.txt
+2026-07-07 02:10:38 | INFO | Archivo data/report_8.txt descargado.
+2026-07-07 02:10:40 | INFO | Registros válidos : 503
+2026-07-07 02:10:40 | INFO | Registros error   : 0
+2026-07-07 02:10:40 | INFO | 503 registros insertados en estadistica.
+2026-07-07 02:10:41 | INFO | Visitantes insertados : 500
+2026-07-07 02:10:41 | INFO | Visitantes actualizados: 3
+2026-07-07 02:10:41 | INFO | report_8.txt registrado en control_cargas.
+2026-07-07 02:10:41 | INFO | Archivo remoto eliminado: data/report_8.txt.
+2026-07-07 02:10:41 | INFO | ------------------------------------------------------------
+2026-07-07 02:10:41 | INFO | Procesando: report_9.txt
+2026-07-07 02:10:41 | INFO | Archivo data/report_9.txt descargado.
+2026-07-07 02:10:46 | INFO | Registros válidos : 993
+2026-07-07 02:10:46 | INFO | Registros error   : 2
+2026-07-07 02:10:47 | INFO | 993 registros insertados en estadistica.
+2026-07-07 02:10:48 | INFO | Visitantes insertados : 993
+2026-07-07 02:10:48 | INFO | Visitantes actualizados: 0
+2026-07-07 02:10:48 | INFO | 2 registros insertados en errores.
+2026-07-07 02:10:48 | INFO | report_9.txt registrado en control_cargas.
+2026-07-07 02:10:48 | INFO | Archivo remoto eliminado: data/report_9.txt.
+2026-07-07 02:10:48 | INFO | ------------------------------------------------------------
+2026-07-07 02:10:48 | INFO | Backup creado: backup/backup_20260707.zip
+2026-07-07 02:10:48 | INFO | Archivo local eliminado: downloads/report_7.txt
+2026-07-07 02:10:48 | INFO | Archivo local eliminado: downloads/report_8.txt
+2026-07-07 02:10:48 | INFO | Archivo local eliminado: downloads/report_9.txt
+2026-07-07 02:10:48 | INFO | [chan 0] sftp session closed.
+2026-07-07 02:10:48 | INFO | Conexión cerrada.
+2026-07-07 02:10:48 | INFO | Conexión cerrada.
