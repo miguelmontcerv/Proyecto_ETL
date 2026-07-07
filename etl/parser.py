@@ -3,7 +3,6 @@ import pandas as pd
 
 from config import EXPECTED_COLUMNS
 
-
 class Parser:
 
     def parse(self, file_path):

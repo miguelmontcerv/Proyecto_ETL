@@ -14,6 +14,7 @@ class Backup:
             exist_ok=True
         )
 
+        # Podemos cambiar al formato de fecha que queramos
         zip_name = datetime.now().strftime(
             "backup_%Y%m%d.zip"
         )

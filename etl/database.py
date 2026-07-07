@@ -291,7 +291,6 @@ class Database:
             """
 
             for _, row in dataframe.iterrows():
-
                 self.cursor.execute(
                     query,
                     (
@@ -302,7 +301,6 @@ class Database:
                 )
 
             self.connection.commit()
-
             self.logger.info(f"{len(dataframe)} registros insertados en errores.")
 
         except mysql.connector.Error as err:

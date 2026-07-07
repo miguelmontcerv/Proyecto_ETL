@@ -22,12 +22,14 @@ class Transformer:
         current_year = datetime.now().year
         current_month = datetime.now().month
 
+        # Calcula las visitas del año actual
         visitas_anio = (
             visitante[visitante["Fecha envio"].dt.year == current_year]
             .groupby("email")
             .size()
         )
 
+        # Calcula las visitas del mes actual
         visitas_mes = (
             visitante[
                 (visitante["Fecha envio"].dt.year == current_year)
@@ -38,6 +40,7 @@ class Transformer:
             .size()
         )
 
+        # Calcula la primera y ultima visita, asi como visitas totales
         visitante = (
             visitante
             .groupby("email")
@@ -49,6 +52,7 @@ class Transformer:
             .reset_index()
         )
 
+        # Mapea las visitas del año en el dataframe, si no hay dato, pone cero
         visitante["visitasAnioActual"] = (
             visitante["email"]
             .map(visitas_anio)
@@ -56,6 +60,7 @@ class Transformer:
             .astype(int)
         )
 
+        # Mapea las visitas del mes en el dataframe, si no hay dato, pone cero
         visitante["visitasMesActual"] = (
             visitante["email"]
             .map(visitas_mes)
@@ -78,7 +83,6 @@ class Transformer:
         ]
 
         for column in date_columns:
-
             estadistica[column] = pd.to_datetime(
                 estadistica[column],
                 format="%d/%m/%Y %H:%M",

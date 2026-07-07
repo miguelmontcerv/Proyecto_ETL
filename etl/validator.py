@@ -5,7 +5,6 @@ from email_validator import validate_email, EmailNotValidError
 class Validator:
 
     def validate(self, df: pd.DataFrame):
-
         df = df.copy()
 
         df["email_valid"] = df["email"].apply(self._validate_email)

@@ -12,7 +12,7 @@ DOWNLOAD_PATH = "downloads"
 BACKUP_PATH = "backup"
 LOG_PATH = "logs"
 
-# ---------- Validación del LAYOUT de los CSV ----------
+# ---------- Validación del layout de los CSV ----------
 EXPECTED_COLUMNS = [
     "email",
     "jyv",
