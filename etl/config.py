@@ -5,11 +5,11 @@ HOST = "sftp"
 PORT = 22
 USERNAME = "usuario"
 PASSWORD = "password"
-REMOTE_PATH = "data"
+REMOTE_PATH = "archivosVisitas"
 
 # ---------- Carpetas locales ----------
 DOWNLOAD_PATH = "downloads"
-BACKUP_PATH = "backup"
+BACKUP_PATH = "visitas/bckp"
 LOG_PATH = "logs"
 
 # ---------- Validación del layout de los CSV ----------

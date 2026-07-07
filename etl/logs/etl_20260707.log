@@ -58,3 +58,100 @@
 2026-07-07 02:10:48 | INFO | [chan 0] sftp session closed.
 2026-07-07 02:10:48 | INFO | Conexión cerrada.
 2026-07-07 02:10:48 | INFO | Conexión cerrada.
+2026-07-07 16:17:33 | ERROR | Error al conectar a MySQL: 2003 (HY000): Can't connect to MySQL server on 'mysql:3306' (111)
+2026-07-07 16:17:33 | INFO | Conectando al servidor SFTP...
+2026-07-07 16:17:33 | INFO | Connected (version 2.0, client OpenSSH_8.4p1)
+2026-07-07 16:17:33 | INFO | Authentication (password) successful!
+2026-07-07 16:17:34 | INFO | [chan 0] Opened sftp connection (server version 3)
+2026-07-07 16:17:34 | INFO | Conexión establecida.
+2026-07-07 16:17:34 | INFO | Buscando archivos...
+2026-07-07 16:17:34 | INFO | 3 encontrados.
+
+2026-07-07 16:23:38 | INFO | Conexión a MySQL exitosa.
+2026-07-07 16:23:38 | INFO | Conectando al servidor SFTP...
+2026-07-07 16:23:38 | INFO | Connected (version 2.0, client OpenSSH_8.4p1)
+2026-07-07 16:23:38 | INFO | Authentication (password) successful!
+2026-07-07 16:23:39 | INFO | [chan 0] Opened sftp connection (server version 3)
+2026-07-07 16:23:39 | INFO | Conexión establecida.
+2026-07-07 16:23:39 | INFO | Buscando archivos...
+2026-07-07 16:24:23 | INFO | Conexión a MySQL exitosa.
+2026-07-07 16:24:23 | INFO | Conectando al servidor SFTP...
+2026-07-07 16:24:23 | INFO | Connected (version 2.0, client OpenSSH_8.4p1)
+2026-07-07 16:24:23 | INFO | Authentication (password) successful!
+2026-07-07 16:24:24 | INFO | [chan 0] Opened sftp connection (server version 3)
+2026-07-07 16:24:24 | INFO | Conexión establecida.
+2026-07-07 16:24:24 | INFO | Buscando archivos...
+2026-07-07 16:27:01 | ERROR | Error al conectar a MySQL: 2003 (HY000): Can't connect to MySQL server on 'mysql:3306' (111)
+2026-07-07 16:27:01 | INFO | Conectando al servidor SFTP...
+2026-07-07 16:27:01 | INFO | Connected (version 2.0, client OpenSSH_8.4p1)
+2026-07-07 16:27:01 | INFO | Authentication (password) successful!
+2026-07-07 16:27:02 | INFO | [chan 0] Opened sftp connection (server version 3)
+2026-07-07 16:27:02 | INFO | Conexión establecida.
+2026-07-07 16:27:02 | INFO | Buscando archivos...
+2026-07-07 16:27:02 | INFO | 3 encontrados.
+
+2026-07-07 16:27:29 | INFO | Conexión a MySQL exitosa.
+2026-07-07 16:27:29 | INFO | Conectando al servidor SFTP...
+2026-07-07 16:27:29 | INFO | Connected (version 2.0, client OpenSSH_8.4p1)
+2026-07-07 16:27:29 | INFO | Authentication (password) successful!
+2026-07-07 16:27:30 | INFO | [chan 0] Opened sftp connection (server version 3)
+2026-07-07 16:27:30 | INFO | Conexión establecida.
+2026-07-07 16:27:30 | INFO | Buscando archivos...
+2026-07-07 16:27:30 | INFO | 3 encontrados.
+
+2026-07-07 16:27:30 | WARNING | report_7.txt ya fue procesado. Se omite.
+
+2026-07-07 16:27:30 | WARNING | report_8.txt ya fue procesado. Se omite.
+
+2026-07-07 16:27:30 | WARNING | report_9.txt ya fue procesado. Se omite.
+
+2026-07-07 16:27:30 | INFO | [chan 0] sftp session closed.
+2026-07-07 16:27:30 | INFO | Conexión cerrada.
+2026-07-07 16:27:30 | INFO | Conexión cerrada.
+2026-07-07 16:30:28 | INFO | Conexión a MySQL exitosa.
+2026-07-07 16:30:28 | INFO | Conectando al servidor SFTP...
+2026-07-07 16:30:28 | INFO | Connected (version 2.0, client OpenSSH_8.4p1)
+2026-07-07 16:30:28 | INFO | Authentication (password) successful!
+2026-07-07 16:30:29 | INFO | [chan 0] Opened sftp connection (server version 3)
+2026-07-07 16:30:29 | INFO | Conexión establecida.
+2026-07-07 16:30:29 | INFO | Buscando archivos...
+2026-07-07 16:30:29 | INFO | 3 encontrados.
+
+2026-07-07 16:30:29 | INFO | Procesando: report_7.txt
+2026-07-07 16:30:29 | INFO | Archivo archivosVisitas/report_7.txt descargado.
+2026-07-07 16:30:33 | INFO | Registros válidos : 503
+2026-07-07 16:30:33 | INFO | Registros error   : 0
+2026-07-07 16:30:34 | INFO | 503 registros insertados en estadistica.
+2026-07-07 16:30:35 | INFO | Visitantes insertados : 502
+2026-07-07 16:30:35 | INFO | Visitantes actualizados: 0
+2026-07-07 16:30:35 | INFO | report_7.txt registrado en control_cargas.
+2026-07-07 16:30:35 | INFO | Archivo remoto eliminado: archivosVisitas/report_7.txt.
+2026-07-07 16:30:35 | INFO | ------------------------------------------------------------
+2026-07-07 16:30:35 | INFO | Procesando: report_8.txt
+2026-07-07 16:30:35 | INFO | Archivo archivosVisitas/report_8.txt descargado.
+2026-07-07 16:30:39 | INFO | Registros válidos : 503
+2026-07-07 16:30:39 | INFO | Registros error   : 0
+2026-07-07 16:30:40 | INFO | 503 registros insertados en estadistica.
+2026-07-07 16:30:41 | INFO | Visitantes insertados : 500
+2026-07-07 16:30:41 | INFO | Visitantes actualizados: 3
+2026-07-07 16:30:41 | INFO | report_8.txt registrado en control_cargas.
+2026-07-07 16:30:41 | INFO | Archivo remoto eliminado: archivosVisitas/report_8.txt.
+2026-07-07 16:30:41 | INFO | ------------------------------------------------------------
+2026-07-07 16:30:41 | INFO | Procesando: report_9.txt
+2026-07-07 16:30:41 | INFO | Archivo archivosVisitas/report_9.txt descargado.
+2026-07-07 16:30:50 | INFO | Registros válidos : 993
+2026-07-07 16:30:50 | INFO | Registros error   : 2
+2026-07-07 16:30:52 | INFO | 993 registros insertados en estadistica.
+2026-07-07 16:30:54 | INFO | Visitantes insertados : 993
+2026-07-07 16:30:54 | INFO | Visitantes actualizados: 0
+2026-07-07 16:30:54 | INFO | 2 registros insertados en errores.
+2026-07-07 16:30:54 | INFO | report_9.txt registrado en control_cargas.
+2026-07-07 16:30:54 | INFO | Archivo remoto eliminado: archivosVisitas/report_9.txt.
+2026-07-07 16:30:54 | INFO | ------------------------------------------------------------
+2026-07-07 16:30:54 | INFO | Backup creado: visitas/bckp/backup_20260707.zip
+2026-07-07 16:30:54 | INFO | Archivo local eliminado: downloads/report_7.txt
+2026-07-07 16:30:54 | INFO | Archivo local eliminado: downloads/report_8.txt
+2026-07-07 16:30:54 | INFO | Archivo local eliminado: downloads/report_9.txt
+2026-07-07 16:30:54 | INFO | [chan 0] sftp session closed.
+2026-07-07 16:30:54 | INFO | Conexión cerrada.
+2026-07-07 16:30:54 | INFO | Conexión cerrada.

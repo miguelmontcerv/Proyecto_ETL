@@ -8,7 +8,7 @@ services:
       - "2222:22"
     command: usuario:password:1001
     volumes:
-      - ./sftp_server/data:/home/usuario/data
+      - ./sftp_server/archivosVisitas:/home/usuario/archivosVisitas
 
   etl:
     build:
